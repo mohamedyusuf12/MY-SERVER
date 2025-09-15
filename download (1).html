@@ -1,110 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>YUSUF Server</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-  <style>
-    /* Reset & base */
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      /* AI Image background */
-      background: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
-      background-size: cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      color: #333;
-      /* Optional overlay using a pseudo element */
-      position: relative;
-      z-index: 0;
-    }
-    
-    /* Overlay for better text readability */
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0, 0, 0, 0.35);
-      z-index: -1;
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Yusuf Server</title>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    /* Use a natural background image */
+    background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
 
-    .container {
-      background: rgba(255, 255, 255, 0.95); /* Slight transparency */
-      width: 360px;
-      padding: 30px 25px;
-      border-radius: 16px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-      text-align: center;
-    }
+  /* Dark overlay for better contrast */
+  body::before {
+    content: "";
+    position: fixed;
+    top:0; left:0; right:0; bottom:0;
+    background: rgba(0,0,0,0.4); /* semi-transparent overlay */
+    z-index: -1;
+  }
 
-    .title {
-      font-weight: 600;
-      font-size: 28px;
-      margin-bottom: 8px;
-      color: #2c3e50;
-      letter-spacing: 1.5px;
-    }
+  .card {
+    background: rgba(255, 255, 255, 0.85); /* semi-transparent white for readability */
+    border-radius: 15px;
+    padding: 30px 40px;
+    width: 300px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    text-align: center;
+  }
 
-    .subtitle {
-      font-weight: 400;
-      font-size: 16px;
-      color: #7f8c8d;
-      margin-bottom: 25px;
-    }
+  .card h1 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #222;
+  }
 
-    .menu {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
+  .card p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #555;
+  }
 
-    .menu a {
-      background: #3498db;
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-      padding: 14px 0;
-      border-radius: 12px;
-      font-size: 16px;
-      transition: background-color 0.3s ease, transform 0.2s ease;
-      user-select: none;
-    }
+  /* Style for all buttons */
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    margin: 10px 0;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none; /* Removes the underline from the anchor tags */
+  }
 
-    .menu a:hover {
-      background: #2980b9;
-      transform: translateY(-3px);
-      box-shadow: 0 6px 12px rgba(41, 128, 185, 0.4);
-    }
-
-    @media (max-width: 400px) {
-      .container {
-        width: 90%;
-        padding: 20px;
-      }
-    }
-  </style>
+  /* Hover effect for buttons */
+  .btn:hover {
+    background-color: #2980b9;
+  }
+</style>
 </head>
 <body>
-  <div class="container">
-    <h1 class="title">YUSUF SERVER</h1>
-    <p class="subtitle">HII GUYZZS! WELCOME TO SERVER 🌟 👋</p>
 
-    <nav class="menu">
-      <a href="timetable.jpg" download>📘 Time Table</a>
-      <a href="DBMS 1.pdf" download>💾 DBMS</a>
-      <a href="#" download>📟 ADLD</a>
-      <a href="AI.pdf" download>🤖 AI</a>
-      <a href="ADLD LAB.pdf" download>📂 ADLD LAB</a>
-      <a href="SAC LAB.docx" download>📂 SAC LAB</a>
-      <a href="SQL.pdf" download>📂 SQL LAB</a>
-    </nav>
-  </div>
+<div class="card">
+  <h1> وسف💫 SERVER</h1>
+  <p>HI GUYZ! GLAD TO SEE YOU ✨✋</p>
+  <a href="timetable.jpg" class="btn">📝 Time Table</a>
+  <a href="DBMS 1.pdf" class="btn">💾 DBMS</a>
+  <a href="#" class="btn">🚍 ADL</a>
+  <a href="#" class="btn">🤖 AI</a>
+  <a href="ADLD LAB.pdf" class="btn">📂 ADL LAB</a>
+  <a href="SAC LAB.docx" class="btn">📂 SAC LAB</a>
+  <a href="#" class="btn">📂 SQL LAB</a>
+</div>
+
 </body>
 </html>
