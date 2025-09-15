@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>🤖 Yusuf Server - DAA MATERIALS</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80")
+        no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+    }
+
+    /* Animated overlay gradient */
+    body::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(15,32,39,0.85), rgba(32,58,67,0.85), rgba(44,83,100,0.85));
+      background-size: 300% 300%;
+      animation: gradientShift 12s ease infinite;
+      z-index: 0;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header, .container, footer {
+      position: relative;
+      z-index: 1;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, #74b9ff, #a29bfe, #00cec9);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: glow 3s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 5px #00cec9, 0 0 10px #0984e3; }
+      to { text-shadow: 0 0 20px #6c5ce7, 0 0 40px #00cec9; }
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #dfe6e9;
+    }
+
+    .container {
+      flex: 1;
+      padding: 30px;
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      gap: 30px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+      backdrop-filter: blur(12px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px) scale(1.01);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+    }
+
+    h2, h3 {
+      margin-bottom: 15px;
+      color: #81ecec;
+    }
+
+    iframe {
+      width: 100%;
+      height: 450px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+      margin-bottom: 15px;
+    }
+
+    .download-link {
+      display: inline-block;
+      padding: 10px 18px;
+      background: linear-gradient(90deg, #00cec9, #0984e3);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .download-link:hover {
+      background: linear-gradient(90deg, #6c5ce7, #00cec9);
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      font-size: 14px;
+      color: #b2bec3;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🤖 Yusuf Server</h1>
+    <p>AI-styled Dashboard with <strong>DAA MATERIALS</strong></p>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>📘 DAA MATERIALS</h2>
+
+      <!-- First PDF -->
+      <h3>DAA Material - Questions</h3>
+      <iframe src="da5eb176-4457-4da9-ace5-3af99a38cf18.pdf"></iframe>
+      <a class="download-link" href="da5eb176-4457-4da9-ace5-3af99a38cf18.pdf" download>⬇️ Download DAA Questions</a>
+
+      <!-- Second PDF -->
+      <h3>DAA Material - Efficiency Classes</h3>
+      <iframe src="Efficiency classes.pdf"></iframe>
+      <a class="download-link" href="Efficiency classes.pdf" download>⬇️ Download Efficiency Classes</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>⚡ Powered by <strong>Yusuf Server</strong> | AI Style with Background Effects</p>
+  </footer>
+</body>
+</html>
